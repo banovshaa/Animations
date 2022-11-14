@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border-bottom: 7rem solid orangered;
+    border-top: 7em solid orangered;
+    animation: border-color-changing 8s linear  infinite;
+}
+.box{
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 25%;
+    background-color:rebeccapurple;
+    border-radius: 10px;
+    animation: box-moving 8s linear  infinite; 
+}
+@keyframes box-moving {
+    0%{
+        width: 400px;
+        background-color:rgb(255, 0, 0);
+        top: 25%;
+    }
+    10%{
+        width: 350px;
+        background-color:rgb(255, 170, 0);
+        top: 35%;
+    }
+    20%{
+        width: 300px;
+        background-color:rgb(238, 255, 0);
+        top: 45%;
+    }
+    30%{    
+        width: 250px;
+        background-color:rgb(129, 241, 0);
+        top: 55%;
+    }
+    40%{
+        width:200px;
+        background-color:rgb(43, 83, 34);
+        top: 71.2%;
+    }
+    50%{
+        width: 100px;
+        background-color:rgb(14, 205, 157);
+        top: 0%;
+    }
+    60%{
+        width: 200px;
+        background-color:rgb(6, 154, 170);
+        top: 71.2%
+    }
+    70%{
+        width: 250px;
+        background-color:rgb(36, 6, 170);
+        top: 45%
+    }
+    80%{
+        width: 350px;
+        background-color:rgb(140, 6, 170);
+        top: 30%
+    }
+    90%{
+        width: 400px;
+        background-color:rgb(170, 6, 118);
+        top: 20%
+    }
+    100%{
+        width: 500px;
+        background-color:rgb(170, 6, 6);
+        top: 10%
+    }  
+} 
+@keyframes border-color-changing {
+        0%,40%{
+            border-bottom: 7rem solid orangered;
+            border-top: 7rem solid orangered;
+        }
+        45%{
+            border-bottom: 7rem solid black;
+            border-top: 7rem solid orangered;
+        }
+        50%{
+            border-bottom: 7rem solid orangered;
+            border-top: 7rem solid orangered;
+        }
+        55%{
+            border-bottom: 7rem solid orangered;
+            border-top: 7rem solid black;
+        }
+        60%{
+            border-bottom: 7rem solid orangered;
+            border-top: 7rem solid orangered;
+        } 
+        65%{
+            border-bottom: 7rem solid black;
+            border-top: 7rem solid orangered;
+        }     
+        70%,100%{
+            border-bottom: 7rem solid orangered;
+            border-top: 7rem solid orangered;
+        }
+}
